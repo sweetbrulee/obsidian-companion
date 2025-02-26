@@ -207,7 +207,8 @@ export default class ChatGPT implements Model {
 			) &&
 			!response_punctuation.includes(completion[0])
 		) {
-			completion = " " + completion;
+			//completion = " " + completion;
+			// Chinese compatibility
 		}
 
 		return completion;
@@ -221,6 +222,12 @@ export class ChatGPTComplete implements Completer {
 
 	async get_models(settings: string) {
 		return [
+			new ChatGPT(
+				settings,
+				"gpt-4o-mini",
+				"GPT 4o mini (recommended)",
+				"gpt-4o-mini"
+			),
 			new ChatGPT(
 				settings,
 				"gpt-3.5-turbo-1106",
