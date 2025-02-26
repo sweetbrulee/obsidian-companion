@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-companion",
 	"version": "1.8.0",
-	"description": "Autocomplete with AI, including ChatGPT, through a copilot-like interface.",
+	"description": "Autocomplete with AI, including ChatGPT and ollama, through a copilot-like interface.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
