@@ -227,7 +227,8 @@ export default class OllamaModel implements Model {
 			) &&
 			!response_punctuation.includes(completion[0])
 		) {
-			completion = " " + completion;
+			//completion = " " + completion;
+			// Chinese compatibility
 		}
 
 		return completion;

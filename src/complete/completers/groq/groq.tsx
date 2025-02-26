@@ -188,7 +188,8 @@ export default class GroqModel implements Model {
 			) &&
 			!response_punctuation.includes(completion[0])
 		) {
-			completion = " " + completion;
+			//completion = " " + completion;
+			// Chinese compatibility
 		}
 
 		return completion;
