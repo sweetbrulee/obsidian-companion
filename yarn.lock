@@ -677,6 +677,19 @@ globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
+groq-sdk@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/groq-sdk/-/groq-sdk-0.15.0.tgz#7ff1ea457551bb0424e1380c15e285cff67fe691"
+  integrity sha512-aYDEdr4qczx3cLCRRe+Beb37I7g/9bD5kHF+EEDxcrREWw1vKoRcfP3vHEkJB7Ud/8oOuF0scRwDpwWostTWuQ==
+  dependencies:
+    "@types/node" "^18.11.18"
+    "@types/node-fetch" "^2.6.4"
+    abort-controller "^3.0.0"
+    agentkeepalive "^4.2.1"
+    form-data-encoder "1.7.2"
+    formdata-node "^4.3.2"
+    node-fetch "^2.6.7"
+
 humanize-ms@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/humanize-ms/-/humanize-ms-1.2.1.tgz#c46e3159a293f6b896da29316d8b6fe8bb79bbed"
