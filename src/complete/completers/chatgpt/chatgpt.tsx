@@ -224,29 +224,10 @@ export class ChatGPTComplete implements Completer {
 		return [
 			new ChatGPT(
 				settings,
-				"gpt-4o-mini",
-				"GPT 4o mini (recommended)",
-				"gpt-4o-mini"
-			),
-			new ChatGPT(
-				settings,
-				"gpt-3.5-turbo-1106",
-				"GPT 3.5 Turbo preview (recommended)",
-				"OpenAI's ChatGPT model, with a longer context window"
-			),
-			new ChatGPT(
-				settings,
-				"gpt-3.5-turbo",
-				"GPT 3.5 Turbo (old)",
-				"OpenAI's ChatGPT model"
-			),
-			new ChatGPT(
-				settings,
-				"gpt-4-1106-preview",
-				"GPT 4 Turbo",
-				"OpenAI's GPT-4 model, with a longer context window"
-			),
-			new ChatGPT(settings, "gpt-4", "GPT 4", "OpenAI's GPT-4 model"),
+				"gpt-4.1-nano",
+				"GPT 4.1 Nano",
+				"gpt-4.1-nano"
+		  	),
 		];
 	}
 
