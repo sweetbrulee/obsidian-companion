@@ -17,7 +17,7 @@ export type Settings = z.infer<typeof settings_schema>;
 const default_settings: Settings = {
 	system_prompt: `### IMPORTANT
 
-Give a short completion based on the context. Complete in the language of the context. Write only the completion and nothing else. Do not include the user's text in your message. Only include the completion.
+Give a short completion based on the context. Complete in the language of what the user uses. Write only the completion and nothing else. Do not include the user's text in your message. Only include the completion.
 
 多使用 \\n 进行段落换行。
 
