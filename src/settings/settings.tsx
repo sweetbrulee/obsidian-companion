@@ -444,6 +444,20 @@ function AcceptSettingsComponent({
 					>
 						Whole completion
 					</button>
+					<button
+						onClick={() =>
+							setAcceptSettings({
+								splitter_regex: "[，。？！：；,.?!:;]",
+								display_splitter_regex: "[，。？！：；,.?!:;]",
+								completion_completeness_regex: ".*[^d]$",
+								min_accept_length: 4,
+								min_display_length: 50,
+								retrigger_threshold: 48,
+							})
+						}
+					>
+						Chinese compatible
+					</button>
 				</div>
 			</SettingsItem>
 			{expanded && (
