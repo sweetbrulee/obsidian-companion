@@ -19,7 +19,7 @@ const default_settings: Settings = {
 
 Give a short completion based on the context. Complete in the language of the context. Write only the completion and nothing else. Do not include the user's text in your message. Only include the completion.
 
-Use \\n for line return at proper time.
+多使用 \\n 进行段落换行。
 
 ### Optional
 
