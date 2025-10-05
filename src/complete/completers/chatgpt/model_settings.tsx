@@ -15,8 +15,25 @@ export const settings_schema = z.object({
 export type Settings = z.infer<typeof settings_schema>;
 
 const default_settings: Settings = {
-	system_prompt:
-		"You are trying to give a long suggestion on how to complete the user's message. Complete in the language of the original message. Write only the completion and nothing else. Do not include the user's text in your message. Only include the completion.",
+	system_prompt: `### IMPORTANT
+
+Give a short completion based on the context. Complete in the language of the context. Write only the completion and nothing else. Do not include the user's text in your message. Only include the completion.
+
+Use \\n for line return at proper time.
+
+### Optional
+
+LaTeX格式标准（当需要写出符号或公式时）
+
+行内公式：$<expression>$
+
+块级公式 (一定要在第一列，不能有任何缩进) ：
+
+$$
+<expression>  
+$$
+
+Output result only.`,
 	user_prompt: "Continue the following:\n\n{{prefix}}",
 };
 
